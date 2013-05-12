@@ -1,8 +1,8 @@
 <?php
 
 $config = array(
-	'server'	=>	'irc.k0nsl.org',		//Server name, prefix it with "ssl://" in order to use SSL server
-	'port'		=>	6697,			//Server port
+	'server'	=>	'irc.rizon.net.',		//Server name, prefix it with "ssl://" in order to use SSL server
+	'port'		=>	6667,			//Server port
 	'channel'	=>	'#k0nsl',		//Channel to join, use array('channel1', 'channel2') for multiple channels
 	'name'		=>	'Jochem',		//Name of the bot
 	'nick'		=>	'jochem',		//Nick of the bot
@@ -22,8 +22,8 @@ $config = array(
 //RSS Reader
 $config['plugins']['rssReader'] = array(
         array('title'=> 'k0nsl',           'url'=>'http://k0nsl.org/blog/rss',    'pollInterval'=>15,     'channel'=>'#k0nsl'),
-        array('title'=> 'quotes',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>20,     'channel'=>'#k0nsl'),
-        array('title'=> 'DZ',          'url'=>'destroyzionism.com/rss',            'pollInterval'=>15,     'channel'=>'#k0nsl'),
+        array('title'=> 'quote',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>20,     'channel'=>'#k0nsl'),
+        array('title'=> 'DestroyZionism',          'url'=>'http://www.destroyzionism.com/feed/',            'pollInterval'=>15,     'channel'=>'#k0nsl'),
 );
 
 //File reader
