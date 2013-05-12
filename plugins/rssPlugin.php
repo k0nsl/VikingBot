@@ -43,7 +43,7 @@ class rssPlugin implements pluginInterface {
 
 		//If we got todo, output one row from it
 		if(count($this->todo) > 0) {
-			if(time() > ($this->lastMsgSent + 5)) {
+			if(time() > ($this->lastMsgSent + 120)) {
 				$row = array_pop($this->todo);
 		                sendMessage($this->socket, $row[0], $row[1]);
 				$this->lastMsgSent = time();
