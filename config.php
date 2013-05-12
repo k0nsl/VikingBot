@@ -1,7 +1,7 @@
 <?php
 
 $config = array(
-	'server'	=>	'irc.rizon.net.',		//Server name, prefix it with "ssl://" in order to use SSL server
+	'server'	=>	'irc.rizon.net',		//Server name, prefix it with "ssl://" in order to use SSL server
 	'port'		=>	6667,			//Server port
 	'channel'	=>	'#trinity',		//Channel to join, use array('channel1', 'channel2') for multiple channels
 	'name'		=>	'Jochem',		//Name of the bot
