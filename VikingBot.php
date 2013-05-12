@@ -194,7 +194,7 @@ class VikingBot {
 	
 	function prepareShutdown($msg) {
 		if(strlen($msg) == 0) {
-			$msg = "VikingBot - https://github.com/Ueland/VikingBot";
+			$msg = "Silence is golden.";
 		}
                 sendData($this->socket, "QUIT :{$msg}");
                 foreach($this->plugins as $plugin) {
