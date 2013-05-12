@@ -21,9 +21,10 @@ $config = array(
 
 //RSS Reader
 $config['plugins']['rssReader'] = array(
-        array('title'=> 'k0nsl',           'url'=>'http://k0nsl.org/blog/rss',    'pollInterval'=>15,     'channel'=>'#k0nsl'),
-        array('title'=> 'quote',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>20,     'channel'=>'#k0nsl'),
-        array('title'=> 'DestroyZionism',          'url'=>'http://www.destroyzionism.com/feed/',            'pollInterval'=>15,     'channel'=>'#k0nsl'),
+        array('title'=> 'k0nsl',           'url'=>'http://k0nsl.org/blog/rss',    'pollInterval'=>15,     'channel'=>'#trinity'),
+        array('title'=> 'quote',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>20,     'channel'=>'#trinity'),
+        array('title'=> 'DestroyZionism',          'url'=>'http://www.destroyzionism.com/feed/',            'pollInterval'=>25,     'channel'=>'#trinity'),
+        array('title'=> 'HN',          'url'=>'https://news.ycombinator.com/rss',            'pollInterval'=>35,     'channel'=>'#trinity'),
 );
 
 //File reader
