@@ -172,7 +172,7 @@ class VikingBot {
 
 	function joinChannel($channel) {
 		logMsg("Setting mode(s).");
-		sendData($this->socket, "MODE -x {$this->config['nick']}");
+		sendData($this->socket, "MODE -x jochem");
 		logMsg("Joining channel {$channel}");
 		if(is_array($channel)) {
 			foreach($channel as $chan) {
