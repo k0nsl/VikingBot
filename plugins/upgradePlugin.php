@@ -33,7 +33,9 @@ class upgradePlugin implements pluginInterface {
 				sendMessage($this->socket, $channel, "{$from}: Wrong password");
 			} else {
 				sendMessage($this->socket, $channel, "{$from}: Starting upgrade...");
-				$response = trim( shell_exec("git pull") );
+				//$response = trim( shell_exec("git pull https://github.com/k0nsl/VikingBot.git") );
+				$response = trim( shell_exec('cd /root/VikingBot-master/; /usr/bin/git pull https://github.com/k0nsl/VikingBot.git') );
+
 				if($response == 'Already up-to-date.') {
 					sendMessage($this->socket, $channel, "{$from}: The bot is already up to date, not restarting.");
 				} else {
