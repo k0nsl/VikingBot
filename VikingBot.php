@@ -171,6 +171,8 @@ class VikingBot {
 	}
 
 	function joinChannel($channel) {
+		logMsg("Setting mode(s).");
+		sendData($this->socket, "MODE {$where} +o {$who}");
 		logMsg("Joining channel {$channel}");
 		if(is_array($channel)) {
 			foreach($channel as $chan) {
