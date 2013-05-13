@@ -37,13 +37,13 @@ class rssPlugin implements pluginInterface {
 		}
 
 		//Start pollings feeds that should be updated after 20 seconds to get the bot in to any channels etc
-		if(($this->started + 30) < time()) {
+		if(($this->started + 50) < time()) {
 			$this->parseFeeds();
 		}
 
 		//If we got todo, output one row from it
 		if(count($this->todo) > 0) {
-			if(time() > ($this->lastMsgSent + 320)) {
+			if(time() > ($this->lastMsgSent + 520)) {
 				$row = array_pop($this->todo);
 		                sendMessage($this->socket, $row[0], $row[1]);
 				$this->lastMsgSent = time();
