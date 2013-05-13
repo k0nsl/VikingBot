@@ -3,7 +3,7 @@
 $config = array(
 	'server'	=>	'irc.rizon.net',		//Server name, prefix it with "ssl://" in order to use SSL server
 	'port'		=>	6667,			//Server port
-	'channel'	=>	'#taunet',		//Channel to join, use array('channel1', 'channel2') for multiple channels
+	'channel'	=>	'#k0nsl',		//Channel to join, use array('channel1', 'channel2') for multiple channels
 	'name'		=>	'Jochem',		//Name of the bot
 	'nick'		=>	'jochem',		//Nick of the bot
 	'pass'		=>	'',			//Server password
@@ -21,10 +21,10 @@ $config = array(
 
 //RSS Reader
 $config['plugins']['rssReader'] = array(
-        array('title'=> 'k0nsl',           'url'=>'http://k0nsl.org/blog/rss',    'pollInterval'=>15,     'channel'=>'#taunet'),
-        array('title'=> 'quote',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>20,     'channel'=>'#taunet'),
-        array('title'=> 'DestroyZionism',          'url'=>'http://www.destroyzionism.com/feed/',            'pollInterval'=>25,     'channel'=>'#taunet'),
-        array('title'=> 'HN',          'url'=>'https://news.ycombinator.com/rss',            'pollInterval'=>35,     'channel'=>'#taunet'),
+        array('title'=> 'k0nsl',           'url'=>'http://k0nsl.org/blog/rss',    'pollInterval'=>30,     'channel'=>'#k0nsl'),
+        array('title'=> 'quote',     'url'=>'http://quotes.k0nsl.org/rss',          'pollInterval'=>25,     'channel'=>'#k0nsl'),
+        array('title'=> 'DestroyZionism',          'url'=>'http://www.destroyzionism.com/feed/',            'pollInterval'=>15,     'channel'=>'#k0nsl'),
+        array('title'=> 'HN',          'url'=>'https://news.ycombinator.com/rss',            'pollInterval'=>20,     'channel'=>'#k0nsl'),
 );
 
 //File reader
